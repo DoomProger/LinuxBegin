@@ -1,0 +1,30 @@
+/home/nick
+find ~ -type f -iname ".*" | wc -l
+22
+
+
+
+find ~ -type f -iname ".*"
+/home/nick/.zcompdump
+/home/nick/.vboxclient-display.pid
+/home/nick/.zsh_history
+/home/nick/.gitconfig
+/home/nick/.mozilla/firefox/6xj1xgjj.default-release/storage/default/https+++www.atlassian.com/.metadata-v2
+/home/nick/.mozilla/firefox/6xj1xgjj.default-release/storage/default/moz-extension+++97fd666b-af80-4789-8ed3-a05eaa7024fa^userContextId=4294967295/.metadata-v2
+/home/nick/.mozilla/firefox/6xj1xgjj.default-release/storage/default/https+++yandex.ru/.metadata-v2
+/home/nick/.mozilla/firefox/6xj1xgjj.default-release/storage/permanent/chrome/.metadata-v2
+/home/nick/.mozilla/firefox/6xj1xgjj.default-release/.parentlock
+/home/nick/.bash_logout
+/home/nick/.vboxclient-seamless.pid
+/home/nick/.vboxclient-draganddrop.pid
+/home/nick/.sudo_as_admin_successful
+/home/nick/.bashrc
+/home/nick/.zshrc.bak
+/home/nick/.git-credentials
+/home/nick/.profile
+/home/nick/.bash_history
+/home/nick/snap/gnome-system-monitor/135/.last_revision
+/home/nick/.viminfo
+/home/nick/.ICEauthority
+/home/nick/.vboxclient-clipboard.pid
+
