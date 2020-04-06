@@ -1,0 +1,611 @@
+ls -l /etc
+total 1060
+drwxr-xr-x  3 root root    4096 фев  3 21:25 acpi
+-rw-r--r--  1 root root    3028 фев  3 21:22 adduser.conf
+drwxr-xr-x  2 root root    4096 апр  5 22:13 alternatives
+-rw-r--r--  1 root root     401 мая 29  2017 anacrontab
+drwxr-xr-x  3 root root    4096 апр  6 00:26 apache2
+-rw-r--r--  1 root root     433 окт  2  2017 apg.conf
+drwxr-xr-x  6 root root    4096 фев  3 21:24 apm
+drwxr-xr-x  3 root root    4096 фев  3 21:25 apparmor
+drwxr-xr-x  8 root root    4096 апр  5 21:49 apparmor.d
+drwxr-xr-x  4 root root    4096 апр  5 21:49 apport
+-rw-r--r--  1 root root     769 апр  4  2018 appstream.conf
+drwxr-xr-x  7 root root    4096 апр  1 00:24 apt
+drwxr-xr-x  3 root root    4096 фев  3 21:26 avahi
+-rw-r--r--  1 root root    2319 апр  4  2018 bash.bashrc
+-rw-r--r--  1 root root      45 апр  2  2018 bash_completion
+drwxr-xr-x  2 root root    4096 апр  5 22:13 bash_completion.d
+-rw-r--r--  1 root root     367 янв 27  2016 bindresvport.blacklist
+drwxr-xr-x  2 root root    4096 апр 20  2018 binfmt.d
+drwxr-xr-x  2 root root    4096 апр  1 00:47 bluetooth
+-rw-r-----  1 root root      33 фев  3 21:26 brlapi.key
+drwxr-xr-x  7 root root    4096 фев  3 21:25 brltty
+-rw-r--r--  1 root root   25341 авг 29  2018 brltty.conf
+drwxr-xr-x  3 root root    4096 фев  3 21:22 ca-certificates
+-rw-r--r--  1 root root    5898 фев  3 21:22 ca-certificates.conf
+drwxr-xr-x  2 root root    4096 фев  3 21:25 calendar
+drwxr-s---  2 root dip     4096 апр  1 00:47 chatscripts
+drwxr-xr-x  2 root root    4096 фев  3 21:23 console-setup
+drwxr-xr-x  2 root root    4096 фев  3 21:25 cracklib
+drwxr-xr-x  2 root root    4096 фев  3 21:25 cron.d
+drwxr-xr-x  2 root root    4096 апр  5 21:49 cron.daily
+drwxr-xr-x  2 root root    4096 фев  3 21:22 cron.hourly
+drwxr-xr-x  2 root root    4096 фев  3 21:25 cron.monthly
+-rw-r--r--  1 root root     722 ноя 16  2017 crontab
+drwxr-xr-x  2 root root    4096 фев  3 21:27 cron.weekly
+drwxr-xr-x  5 root lp      4096 апр  6 20:06 cups
+drwxr-xr-x  2 root root    4096 фев  3 21:26 cupshelpers
+drwxr-xr-x  4 root root    4096 фев  3 21:22 dbus-1
+drwxr-xr-x  4 root root    4096 фев  3 21:24 dconf
+-rw-r--r--  1 root root    2969 фев 28  2018 debconf.conf
+-rw-r--r--  1 root root      11 июн 26  2017 debian_version
+drwxr-xr-x  2 root root    4096 апр  5 21:49 default
+-rw-r--r--  1 root root     604 авг 13  2017 deluser.conf
+drwxr-xr-x  2 root root    4096 апр  6 00:12 depmod.d
+drwxr-xr-x  4 root root    4096 фев  3 21:23 dhcp
+drwxr-xr-x  2 root root    4096 апр  1 00:23 dictionaries-common
+drwxr-xr-x  4 root root    4096 апр  5 22:13 dkms
+drwxr-xr-x  4 root root    4096 апр  5 22:13 dpkg
+drwxr-xr-x  3 root root    4096 фев  3 21:25 emacs
+-rw-r--r--  1 root root      96 фев  3 21:22 environment
+drwxr-xr-x  3 root root    4096 апр  5 21:49 firefox
+drwxr-xr-x  4 root root    4096 фев  3 21:25 fonts
+-rw-rw-r--  1 root root     731 апр  1 00:18 fstab
+-rw-r--r--  1 root root     280 июн 20  2014 fuse.conf
+drwxr-xr-x  3 root root    4096 апр  1 00:47 fwupd
+-rw-r--r--  1 root root    2584 фев  1  2018 gai.conf
+drwxr-xr-x  2 root root    4096 фев  3 21:26 gdb
+drwxr-xr-x  8 root root    4096 фев  3 21:27 gdm3
+drwxr-xr-x  2 root root    4096 фев  3 21:27 geoclue
+drwxr-xr-x  4 root root    4096 фев  3 21:24 ghostscript
+drwxr-xr-x  3 root root    4096 фев  3 21:24 glvnd
+drwxr-xr-x  2 root root    4096 фев  3 21:25 gnome
+drwxr-xr-x  2 root root    4096 фев  3 21:25 groff
+-rw-r--r--  1 root root     930 апр  1 00:38 group
+-rw-r--r--  1 root root     916 апр  1 00:21 group-
+drwxr-xr-x  2 root root    4096 апр  1 00:47 grub.d
+-rw-r-----  1 root shadow   773 апр  1 00:38 gshadow
+-rw-r-----  1 root shadow   762 апр  1 00:21 gshadow-
+drwxr-xr-x  3 root root    4096 фев  3 21:23 gss
+drwxr-xr-x  2 root root    4096 фев  3 21:25 gtk-2.0
+drwxr-xr-x  2 root root    4096 фев  3 21:27 gtk-3.0
+-rw-r--r--  1 root root    4861 фев 22  2018 hdparm.conf
+-rw-r--r--  1 root root      92 апр  9  2018 host.conf
+-rw-r--r--  1 root root       9 апр  1 00:20 hostname
+-rw-r--r--  1 root root     223 апр  1 00:20 hosts
+-rw-r--r--  1 root root     411 фев  3 21:25 hosts.allow
+-rw-r--r--  1 root root     711 фев  3 21:25 hosts.deny
+drwxr-xr-x  2 root root    4096 фев  3 21:27 hp
+drwxr-xr-x  3 root root    4096 фев  3 21:24 ifplugd
+drwxr-xr-x  2 root root    4096 фев  3 21:25 ImageMagick-6
+drwxr-xr-x  2 root root    4096 апр  1 00:23 init
+drwxr-xr-x  2 root root    4096 апр  5 21:49 init.d
+drwxr-xr-x  5 root root    4096 фев  3 21:23 initramfs-tools
+-rw-r--r--  1 root root    1748 мая 15  2017 inputrc
+drwxr-xr-x  2 root root    4096 фев  3 21:27 insserv.conf.d
+drwxr-xr-x  4 root root    4096 фев  3 21:22 iproute2
+-rw-r--r--  1 root root      26 янв 30 15:28 issue
+-rw-r--r--  1 root root      19 янв 30 15:28 issue.net
+drwxr-xr-x  8 root root    4096 апр  5 22:13 kernel
+-rw-r--r--  1 root root     110 апр  1 00:22 kernel-img.conf
+-rw-r--r--  1 root root    1308 дек  2  2017 kerneloops.conf
+drwxr-xr-x  2 root root    4096 фев  3 21:25 ldap
+-rw-r--r--  1 root root   75855 апр  6 00:27 ld.so.cache
+-rw-r--r--  1 root root      34 янв 27  2016 ld.so.conf
+drwxr-xr-x  2 root root    4096 апр  5 22:13 ld.so.conf.d
+-rw-r--r--  1 root root     267 апр  9  2018 legal
+-rw-r--r--  1 root root      27 янв 18  2018 libao.conf
+-rw-r--r--  1 root root     191 фев  8  2018 libaudit.conf
+drwxr-xr-x  3 root root    4096 фев  3 21:24 libblockdev
+drwxr-xr-x  2 root root    4096 фев  3 21:25 libnl-3
+drwxr-xr-x  2 root root    4096 апр 28  2017 libpaper.d
+drwxr-xr-x  4 root root    4096 апр  6 00:26 lighttpd
+-rw-r--r--  1 root root    1417 апр  8  2018 lintianrc
+-rw-r--r--  1 root root    2995 апр 16  2018 locale.alias
+-rw-r--r--  1 root root    9393 апр  1 00:20 locale.gen
+lrwxrwxrwx  1 root root      33 апр  1 00:21 localtime -> /usr/share/zoneinfo/Europe/Moscow
+drwxr-xr-x  4 root root    4096 фев  3 21:24 logcheck
+-rw-r--r--  1 root root   10550 янв 25  2018 login.defs
+-rw-r--r--  1 root root     703 авг 21  2017 logrotate.conf
+drwxr-xr-x  2 root root    4096 апр  5 21:49 logrotate.d
+-rw-r--r--  1 root root     105 янв 30 15:28 lsb-release
+-rw-r--r--  1 root root   14867 окт 13  2016 ltrace.conf
+-r--r--r--  1 root root      33 апр  1 00:36 machine-id
+-rw-r--r--  1 root root     111 фев 13  2018 magic
+-rw-r--r--  1 root root     111 фев 13  2018 magic.mime
+-rw-r--r--  1 root root   20157 апр  6 17:51 mailcap
+-rw-r--r--  1 root root     449 июл 15  2016 mailcap.order
+-rw-r--r--  1 root root    5174 авг  4  2018 manpath.config
+drwxr-xr-x  2 root root    4096 апр  1 01:07 mc
+-rw-r--r--  1 root root   24301 июл 15  2016 mime.types
+-rw-r--r--  1 root root     812 мар 24  2018 mke2fs.conf
+drwxr-xr-x  2 root root    4096 апр  5 22:13 modprobe.d
+-rw-r--r--  1 root root     195 фев  3 21:22 modules
+drwxr-xr-x  2 root root    4096 апр  1 00:45 modules-load.d
+lrwxrwxrwx  1 root root      19 апр  1 00:21 mtab -> ../proc/self/mounts
+-rw-r--r--  1 root root     624 авг  8  2007 mtools.conf
+-rw-r--r--  1 root root    9048 фев 14  2018 nanorc
+drwxr-xr-x  2 root root    4096 фев  3 21:30 netplan
+drwxr-xr-x  7 root root    4096 фев  3 21:24 network
+drwxr-xr-x  6 root root    4096 фев  3 21:23 networkd-dispatcher
+drwxr-xr-x  7 root root    4096 апр  1 00:47 NetworkManager
+-rw-r--r--  1 root root      91 апр  9  2018 networks
+drwxr-xr-x  2 root root    4096 фев  3 21:22 newt
+-rw-r--r--  1 root root     556 фев  3 21:26 nsswitch.conf
+drwxr-xr-x  2 root root    4096 фев  3 21:22 opt
+lrwxrwxrwx  1 root root      21 апр  1 00:18 os-release -> ../usr/lib/os-release
+drwxr-xr-x  2 root root    4096 фев  3 21:26 PackageKit
+-rw-r--r--  1 root root     552 апр  5  2018 pam.conf
+drwxr-xr-x  2 root root    4096 апр  1 01:05 pam.d
+-rw-rw-r--  1 root root       3 апр  1 00:21 papersize
+-rw-r--r--  1 root root    2492 апр  6 18:08 passwd
+-rw-r--r--  1 root root    2492 апр  6 18:05 passwd-
+drwxr-xr-x  2 root root    4096 фев  3 21:25 pcmcia
+drwxr-xr-x  5 root root    4096 фев  3 21:26 perl
+drwxr-xr-x  4 root root    4096 фев  3 21:24 pki
+drwxr-xr-x  3 root root    4096 фев  3 21:24 pm
+-rw-r--r--  1 root root    7649 фев  3 21:26 pnm2ppa.conf
+drwxr-xr-x  5 root root    4096 фев  3 21:24 polkit-1
+-rw-rw-r--  1 root root     350 апр  1 00:21 popularity-contest.conf
+drwxr-xr-x  8 root dip     4096 апр  1 00:47 ppp
+-rw-r--r--  1 root root     581 апр  9  2018 profile
+drwxr-xr-x  2 root root    4096 фев  3 21:26 profile.d
+-rw-r--r--  1 root root    2932 дек 26  2016 protocols
+drwxr-xr-x  2 root root    4096 фев  3 21:26 pulse
+drwxr-xr-x  2 root root    4096 апр  3 21:01 python
+drwxr-xr-x  2 root root    4096 фев  3 21:25 python2.7
+drwxr-xr-x  2 root root    4096 фев  3 21:22 python3
+drwxr-xr-x  2 root root    4096 фев  3 21:23 python3.6
+drwxr-xr-x  2 root root    4096 апр  1 00:23 rc0.d
+drwxr-xr-x  2 root root    4096 апр  1 00:23 rc1.d
+drwxr-xr-x  2 root root    4096 апр  1 01:05 rc2.d
+drwxr-xr-x  2 root root    4096 апр  1 01:05 rc3.d
+drwxr-xr-x  2 root root    4096 апр  1 01:05 rc4.d
+drwxr-xr-x  2 root root    4096 апр  1 01:05 rc5.d
+drwxr-xr-x  2 root root    4096 апр  1 00:23 rc6.d
+drwxr-xr-x  2 root root    4096 апр  1 00:23 rcS.d
+drwxr-xr-x  3 root root    4096 фев  3 21:24 resolvconf
+lrwxrwxrwx  1 root root      39 апр  1 00:20 resolv.conf -> ../run/systemd/resolve/stub-resolv.conf
+-rwxr-xr-x  1 root root     268 июл 21  2017 rmt
+-rw-r--r--  1 root root     887 дек 26  2016 rpc
+-rw-r--r--  1 root root    1358 янв 30  2018 rsyslog.conf
+drwxr-xr-x  2 root root    4096 фев  3 21:26 rsyslog.d
+drwxr-xr-x  3 root root    4096 фев  3 21:26 sane.d
+-rw-r--r--  1 root root    4141 янв 25  2018 securetty
+drwxr-xr-x  4 root root    4096 фев  3 21:25 security
+drwxr-xr-x  2 root root    4096 фев  3 21:22 selinux
+-rw-r--r--  1 root root   10368 апр  5  2017 sensors3.conf
+drwxr-xr-x  2 root root    4096 фев  3 21:25 sensors.d
+-rw-r--r--  1 root root   19183 дек 26  2016 services
+-rw-r-----  1 root shadow  1318 апр  1 01:05 shadow
+-rw-r-----  1 root shadow  1318 апр  1 01:05 shadow-
+-rw-r--r--  1 root root     111 апр  6 18:07 shells
+drwxr-xr-x  2 root root    4096 фев  3 21:25 skel
+drwxr-xr-x  4 root root    4096 фев  3 21:26 speech-dispatcher
+drwxr-xr-x  2 root root    4096 апр  1 01:05 ssh
+drwxr-xr-x  4 root root    4096 фев  3 21:23 ssl
+-rw-r--r--  1 root root      18 апр  1 00:21 subgid
+-rw-r--r--  1 root root       0 фев  3 21:22 subgid-
+-rw-r--r--  1 root root      18 апр  1 00:21 subuid
+-rw-r--r--  1 root root       0 фев  3 21:22 subuid-
+-r--r-----  1 root root     755 янв 18  2018 sudoers
+drwxr-xr-x  2 root root    4096 фев  3 21:23 sudoers.d
+-rw-r--r--  1 root root    2683 янв 18  2018 sysctl.conf
+drwxr-xr-x  2 root root    4096 апр  1 00:45 sysctl.d
+drwxr-xr-x  5 root root    4096 апр  1 00:45 systemd
+drwxr-xr-x  2 root root    4096 фев  3 21:23 terminfo
+-rw-r--r--  1 root root    2623 авг 10  2016 therc
+drwxr-xr-x  2 root root    4096 фев  3 21:25 thermald
+-rw-r--r--  1 root root      14 апр  1 00:21 timezone
+drwxr-xr-x  2 root root    4096 апр 20  2018 tmpfiles.d
+-rw-r--r--  1 root root    1260 фев 26  2018 ucf.conf
+drwxr-xr-x  4 root root    4096 апр  1 00:47 udev
+drwxr-xr-x  2 root root    4096 фев  3 21:25 udisks2
+drwxr-xr-x  3 root root    4096 фев  3 21:26 ufw
+-rw-r--r--  1 root root     403 мар  1  2018 updatedb.conf
+drwxr-xr-x  3 root root    4096 фев  3 21:27 update-manager
+drwxr-xr-x  2 root root    4096 апр  1 00:47 update-motd.d
+drwxr-xr-x  2 root root    4096 мая 24  2019 update-notifier
+drwxr-xr-x  2 root root    4096 фев  3 21:25 UPower
+-rw-r--r--  1 root root    1523 мар  6  2018 usb_modeswitch.conf
+drwxr-xr-x  2 root root    4096 фев 23  2018 usb_modeswitch.d
+drwxr-xr-x  2 root root    4096 апр  1 00:47 vim
+lrwxrwxrwx  1 root root      23 апр  1 00:18 vtrgb -> /etc/alternatives/vtrgb
+-rw-r--r--  1 root root    4942 апр  8  2019 wgetrc
+drwxr-xr-x  2 root root    4096 фев  3 21:26 wpa_supplicant
+drwxr-xr-x 11 root root    4096 фев  3 21:27 X11
+drwxr-xr-x  5 root root    4096 фев  3 21:24 xdg
+drwxr-xr-x  2 root root    4096 апр  3 20:49 zsh
+-rw-r--r--  1 root root     477 мар 16  2018 zsh_command_not_found
+ls -l /proc
+total 0
+dr-xr-xr-x  9 root            root                          0 апр  6 18:08 1
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 10
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 1034
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 1035
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 1050
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 1055
+dr-xr-xr-x  9 root            gdm                           0 апр  6 18:09 1068
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1077
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1078
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1089
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1091
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1093
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1099
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 11
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 1106
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1119
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1125
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1130
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1132
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1136
+dr-xr-xr-x  9 rtkit           rtkit                         0 апр  6 18:09 1137
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1150
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1153
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1156
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1160
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1166
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 1178
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 118
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 1183
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1184
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1187
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1190
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1192
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1195
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1196
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1197
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 12
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1200
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1206
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1208
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1213
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1214
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1221
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1226
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1232
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1235
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1241
+dr-xr-xr-x  9 colord          colord                        0 апр  6 18:09 1256
+dr-xr-xr-x  9 gdm             gdm                           0 апр  6 18:09 1273
+dr-xr-xr-x  9 root            nick                          0 апр  6 18:09 1291
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1294
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1295
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 13
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 130
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1308
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 131
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1312
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1314
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 132
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1321
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1324
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 133
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 134
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 135
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 136
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 137
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 138
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 14
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 141
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 142
+dr-xr-xr-x  9 nick            nick                          0 апр  6 20:09 1423
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1424
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 143
+dr-xr-xr-x  9 nick            nick                          0 апр  6 20:09 1432
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1433
+dr-xr-xr-x  9 nick            nick                          0 апр  6 20:09 1438
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1440
+dr-xr-xr-x  9 nick            nick                          0 апр  6 20:09 1446
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1448
+dr-xr-xr-x  9 nick            nick                          0 апр  6 20:09 1459
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 146
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1466
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 147
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1471
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1474
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 148
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 149
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1499
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 15
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 150
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1508
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 151
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1513
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1524
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1535
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1539
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 154
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1541
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1543
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1553
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1559
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1563
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1571
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1578
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1588
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1593
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1597
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 16
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1601
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1605
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1610
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1611
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1614
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1615
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1620
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1624
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1625
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1631
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1632
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1647
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1649
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 165
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1651
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1654
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1655
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1657
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1659
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1663
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1679
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 17
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1711
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1718
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1764
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1771
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1782
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1790
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1795
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 18
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1806
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1817
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1839
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1849
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 185
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:09 1858
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 186
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:10 1879
+dr-xr-xr-x  9 nick            nick                          0 апр  6 18:10 1882
+dr-xr-xr-x  9 root            root                          0 апр  6 18:10 1903
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 2
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 20
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 208
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 21
+dr-xr-xr-x  9 root            root                          0 апр  6 20:09 2109
+dr-xr-xr-x  9 root            root                          0 апр  6 20:09 2153
+dr-xr-xr-x  9 root            root                          0 апр  6 20:09 2155
+dr-xr-xr-x  9 nick            nick                          0 апр  6 20:07 2172
+dr-xr-xr-x  9 root            root                          0 апр  6 20:09 2187
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 22
+dr-xr-xr-x  9 nick            nick                          0 апр  6 20:08 2246
+dr-xr-xr-x  9 nick            nick                          0 апр  6 20:09 2266
+dr-xr-xr-x  9 nick            nick                          0 апр  6 20:09 2278
+dr-xr-xr-x  9 root            root                          0 апр  6 20:10 2289
+dr-xr-xr-x  9 root            root                          0 апр  6 20:10 2290
+dr-xr-xr-x  9 root            root                          0 апр  6 20:10 2291
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 23
+dr-xr-xr-x  9 nick            nick                          0 апр  6 20:10 2307
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 24
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 240
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 241
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 244
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 26
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 27
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 273
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 274
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 28
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 287
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 29
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 3
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 30
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 31
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 310
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 32
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 327
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 33
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 334
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 338
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 34
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 341
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 346
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 35
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 351
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 36
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 367
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 372
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 373
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 374
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 376
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 377
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 378
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 380
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 381
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 382
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 383
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 384
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 4
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 409
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 410
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 44
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 543
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 544
+dr-xr-xr-x  9 systemd-resolve systemd-resolve               0 апр  6 18:09 563
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 6
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 650
+dr-xr-xr-x  9 messagebus      messagebus                    0 апр  6 18:09 653
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 663
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 665
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 667
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 668
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 669
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 671
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 672
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 673
+dr-xr-xr-x  9 syslog          syslog                        0 апр  6 18:09 675
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 686
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 687
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 689
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 733
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 736
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 798
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 8
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 812
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 819
+dr-xr-xr-x  9 whoopsie        whoopsie                      0 апр  6 18:09 858
+dr-xr-xr-x  9 kernoops        adm                           0 апр  6 18:09 859
+dr-xr-xr-x  9 kernoops        adm                           0 апр  6 18:09 863
+dr-xr-xr-x  9 avahi           avahi                         0 апр  6 18:09 889
+dr-xr-xr-x  9 avahi           avahi                         0 апр  6 18:09 891
+dr-xr-xr-x  9 root            root                          0 апр  6 18:09 9
+dr-xr-xr-x  2 root            root                          0 апр  6 18:09 acpi
+dr-xr-xr-x  5 root            root                          0 апр  6 18:09 asound
+-r--r--r--  1 root            root                          0 апр  6 20:09 buddyinfo
+dr-xr-xr-x  4 root            root                          0 апр  6 18:09 bus
+-r--r--r--  1 root            root                          0 апр  6 18:09 cgroups
+-r--r--r--  1 root            root                          0 апр  6 18:08 cmdline
+-r--r--r--  1 root            root                          0 апр  6 20:09 consoles
+-r--r--r--  1 root            root                          0 апр  6 18:09 cpuinfo
+-r--r--r--  1 root            root                          0 апр  6 20:09 crypto
+-r--r--r--  1 root            root                          0 апр  6 18:09 devices
+-r--r--r--  1 root            root                          0 апр  6 20:09 diskstats
+-r--r--r--  1 root            root                          0 апр  6 20:09 dma
+dr-xr-xr-x  2 root            root                          0 апр  6 20:09 driver
+-r--r--r--  1 root            root                          0 апр  6 20:09 execdomains
+-r--r--r--  1 root            root                          0 апр  6 20:09 fb
+-r--r--r--  1 root            root                          0 апр  6 18:08 filesystems
+dr-xr-xr-x  5 root            root                          0 апр  6 18:09 fs
+-r--r--r--  1 root            root                          0 апр  6 18:09 interrupts
+-r--r--r--  1 root            root                          0 апр  6 20:09 iomem
+-r--r--r--  1 root            root                          0 апр  6 20:09 ioports
+dr-xr-xr-x 23 root            root                          0 апр  6 18:09 irq
+-r--r--r--  1 root            root                          0 апр  6 20:09 kallsyms
+-r--------  1 root            root            140737477885952 апр  6 18:08 kcore
+-r--r--r--  1 root            root                          0 апр  6 20:09 keys
+-r--r--r--  1 root            root                          0 апр  6 20:09 key-users
+-r--------  1 root            root                          0 апр  6 18:09 kmsg
+-r--------  1 root            root                          0 апр  6 20:09 kpagecgroup
+-r--------  1 root            root                          0 апр  6 20:09 kpagecount
+-r--------  1 root            root                          0 апр  6 20:09 kpageflags
+-r--r--r--  1 root            root                          0 апр  6 20:09 loadavg
+-r--r--r--  1 root            root                          0 апр  6 20:09 locks
+-r--r--r--  1 root            root                          0 апр  6 18:09 mdstat
+-r--r--r--  1 root            root                          0 апр  6 18:09 meminfo
+-r--r--r--  1 root            root                          0 апр  6 20:09 misc
+-r--r--r--  1 root            root                          0 апр  6 18:09 modules
+lrwxrwxrwx  1 root            root                         11 апр  6 18:09 mounts -> self/mounts
+-rw-r--r--  1 root            root                          0 апр  6 18:09 mtrr
+lrwxrwxrwx  1 root            root                          8 апр  6 18:09 net -> self/net
+-r--------  1 root            root                          0 апр  6 20:09 pagetypeinfo
+-r--r--r--  1 root            root                          0 апр  6 20:09 partitions
+dr-xr-xr-x  2 root            root                          0 апр  6 20:09 pressure
+-r--r--r--  1 root            root                          0 апр  6 20:09 sched_debug
+-r--r--r--  1 root            root                          0 апр  6 20:09 schedstat
+dr-xr-xr-x  3 root            root                          0 апр  6 20:09 scsi
+lrwxrwxrwx  1 root            root                          0 апр  6  2020 self -> 2307
+-r--------  1 root            root                          0 апр  6 20:09 slabinfo
+-r--r--r--  1 root            root                          0 апр  6 20:09 softirqs
+-r--r--r--  1 root            root                          0 апр  6 18:09 stat
+-r--r--r--  1 root            root                          0 апр  6 18:09 swaps
+dr-xr-xr-x  1 root            root                          0 апр  6 18:08 sys
+--w-------  1 root            root                          0 апр  6 18:09 sysrq-trigger
+dr-xr-xr-x  2 root            root                          0 апр  6 20:09 sysvipc
+lrwxrwxrwx  1 root            root                          0 апр  6  2020 thread-self -> 2307/task/2307
+-r--------  1 root            root                          0 апр  6 20:09 timer_list
+dr-xr-xr-x  4 root            root                          0 апр  6 20:09 tty
+-r--r--r--  1 root            root                          0 апр  6 18:09 uptime
+-r--r--r--  1 root            root                          0 апр  6 18:09 version
+-r--r--r--  1 root            root                          0 апр  6 20:09 version_signature
+-r--------  1 root            root                          0 апр  6 20:09 vmallocinfo
+-r--r--r--  1 root            root                          0 апр  6 20:09 vmstat
+-r--r--r--  1 root            root                          0 апр  6 20:09 zoneinfo
+ls -l /home
+total 4
+drwxr-xr-x 17 nick nick 4096 апр  6 19:47 nick
+vim /etc/networks
+# symbolic names for networks, see networks(5) for more information
+link-local 169.254.0.0
+vim /etc/debconf.conf
+# This is the main config file for debconf. It tells debconf where to
+# store data. The format of this file is a set of stanzas. Each stanza
+# except the first sets up a database for debconf to use. For details, see
+# debconf.conf(5) (in the debconf-doc package).
+#
+# So first things first. This first stanza gives the names of two databases.
+
+# Debconf will use this database to store the data you enter into it,
+# and some other dynamic data.
+Config: configdb
+# Debconf will use this database to store static template data.
+Templates: templatedb
+
+# World-readable, and accepts everything but passwords.
+Name: config
+Driver: File
+Mode: 644
+Reject-Type: password
+Filename: /var/cache/debconf/config.dat
+
+# Not world readable (the default), and accepts only passwords.
+Name: passwords
+Driver: File
+Mode: 600
+Backup: false
+Required: false
+Accept-Type: password
+Filename: /var/cache/debconf/passwords.dat
+
+# Set up the configdb database. By default, it consists of a stack of two
+# databases, one to hold passwords and one for everything else.
+Name: configdb
+Driver: Stack
+Stack: config, passwords
+
+# Set up the templatedb database, which is a single flat text file
+# by default.
+Name: templatedb
+Driver: File
+Mode: 644
+Filename: /var/cache/debconf/templates.dat
+
+# Well that was pretty straightforward, and it will be enough for most
+# people's needs, but debconf's database drivers can be used to do much
+# more interesting things. For example, suppose you want to use config 
+# data from another host, which is mounted over nfs or perhaps the database
+# is accessed via LDAP. You don't want to write to the remote debconf database,
+# just read from it, so you still need a local database for local changes.
+#
+# A remote NFS mounted database, read-only. It is optional; if debconf
+# fails to use it it will not abort.
+#Name: remotedb
+#Driver: DirTree
+#Directory: /mnt/otherhost/var/cache/debconf/config
+#Readonly: true
+#Required: false
+#
+# A remote LDAP database. It is also read-only. The password is really
+# only necessary if the database is not accessible anonymously.
+# Option KeyByKey instructs the backend to retrieve keys from the LDAP
+# server individually (when they are requested), instead of loading all
+# keys at startup. The default is 0, and should only be enabled if you
+# want to track accesses to individual keys on the LDAP server side.
+#Name: remotedb
+#Driver: LDAP
+#Server: remotehost
+#BaseDN: cn=debconf,dc=domain,dc=com
+#BindDN: uid=admin,dc=domain,dc=com
+#BindPasswd: secret
+#KeyByKey: 0
+#
+# A stack consisting of two databases. Values will be read from
+# the first database in the stack to contain a value. In this example,
+# writes always go to the first database.
+#Name: fulldb
+#Driver: Stack
+#Stack: configdb, remotedb
+#
+# In this example, we'd use Config: fulldb at the top of the file
+# to make it use the combination of the databases.
+#
+# Even more complex and interesting setups are possible, see the 
+# debconf.conf(5) page for details.
