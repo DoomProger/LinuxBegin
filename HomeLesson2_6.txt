@@ -1,0 +1,20 @@
+nick@ub18x-GB:~$ ps -aw
+3549 pts/2    00:00:00 vim
+ 3571 pts/1    00:00:00 ps
+kill -15 3549
+
+
+nick@ub18x-GB:~$ vim Desktop/HL/Readme.txt 
+Vim: Caught deadly signal TERM
+Vim: Finished.
+Terminated
+
+----------------------
+3584 pts/2    00:00:00 vim
+ 3588 pts/1    00:00:00 ps
+nick@ub18x-GB:~$ kill -9 3584
+
+Git installed, dir /gitrepos/linux
+Killed
+
+
