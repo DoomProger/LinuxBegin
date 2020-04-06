@@ -1,0 +1,19 @@
+nick@ub18x-GB:~/Desktop/HL$ cat>hl3.txt
+-----------file 
+hl3.txt
+nick@ub18x-GB:~/Desktop/HL$ cat>hl31.txt
+privet
+nick@ub18x-GB:~/Desktop/HL$ 
+nick@ub18x-GB:~/Desktop/HL$ cat>hl32.txt
+Hello!
+nick@ub18x-GB:~/Desktop/HL$ ls
+file1.txt  file2.txt  file3_new.txt  hl31.txt  hl32.txt  hl3.txt  Readme.txt
+nick@ub18x-GB:~/Desktop/HL$ 
+nick@ub18x-GB:~/Desktop/HL$ mv hl3.txt HL3GB/
+nick@ub18x-GB:~/Desktop/HL$ ls HL3GB/
+hl3.txt
+nick@ub18x-GB:~/Desktop/HL$
+nick@ub18x-GB:~/Desktop/HL$ rm -r HL3GB/
+nick@ub18x-GB:~/Desktop/HL$ ls
+file1.txt  file2.txt  file3_new.txt  hl31.txt  hl32.txt  Readme.txt
+nick@ub18x-GB:~/Desktop/HL$
