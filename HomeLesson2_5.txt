@@ -1,0 +1,8 @@
+nick@ub18x-GB:~$ cat /etc/* 2>error.txt
+nick@ub18x-GB:~$ ls
+Desktop  Documents  Downloads  error.txt  Music  Pictures  Public  snap  Templates  Videos
+nick@ub18x-GB:~$ 
+nick@ub18x-GB:~$ 
+nick@ub18x-GB:~$ cat error.txt | wc -l
+131
+
