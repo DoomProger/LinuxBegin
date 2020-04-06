@@ -1,0 +1,193 @@
+nick@ub18x-GB:~$ ls -al
+total 176
+drwxr-xr-x 17 nick nick  4096 апр  6 23:02 .
+drwxr-xr-x  3 root root  4096 апр  1 00:21 ..
+-rw-------  1 nick nick   311 апр  6 21:45 .bash_history
+-rw-r--r--  1 nick nick   220 апр  1 00:21 .bash_logout
+-rw-r--r--  1 nick nick  3771 апр  1 00:21 .bashrc
+drwx------ 13 nick nick  4096 апр  1 01:05 .cache
+drwx------ 14 nick nick  4096 апр  6 17:51 .config
+drwxr-xr-x  3 nick nick  4096 апр  3 21:50 Desktop
+drwxr-xr-x  2 nick nick  4096 апр  1 01:22 Documents
+drwxr-xr-x  2 nick nick  4096 апр  1 00:37 Downloads
+-rw-r--r--  1 nick nick   117 апр  6 20:48 .gitconfig
+-rw-------  1 nick nick    41 апр  6 21:46 .git-credentials
+drwx------  3 nick nick  4096 апр  6 00:19 .gnupg
+-rw-------  1 nick nick  3260 апр  6 18:09 .ICEauthority
+drwx------  3 nick nick  4096 апр  1 00:37 .local
+drwx------  5 nick nick  4096 апр  1 00:59 .mozilla
+drwxr-xr-x  2 nick nick  4096 апр  1 00:37 Music
+drwxr-xr-x  2 nick nick  4096 апр  1 00:37 Pictures
+-rw-r--r--  1 nick nick   807 апр  1 00:21 .profile
+drwxr-xr-x  2 nick nick  4096 апр  1 00:37 Public
+drwxr-xr-x  3 nick nick  4096 апр  6 17:53 snap
+drwx------  2 nick nick  4096 апр  6 00:54 .ssh
+-rw-r--r--  1 nick nick     0 апр  1 00:38 .sudo_as_admin_successful
+drwxr-xr-x  2 nick nick  4096 апр  1 00:37 Templates
+-rw-r-----  1 nick nick     5 апр  6 18:09 .vboxclient-clipboard.pid
+-rw-r-----  1 nick nick     5 апр  6 18:09 .vboxclient-display.pid
+-rw-r-----  1 nick nick     5 апр  6 18:09 .vboxclient-draganddrop.pid
+-rw-r-----  1 nick nick     5 апр  6 18:09 .vboxclient-seamless.pid
+drwxr-xr-x  2 nick nick  4096 апр  1 00:37 Videos
+-rw-------  1 nick nick  9160 апр  6 21:44 .viminfo
+-rw-r--r--  1 nick nick 42542 апр  3 21:00 .zcompdump
+-rw-------  1 nick nick   562 апр  5 21:57 .zsh_history
+-rw-r--r--  1 nick nick  1449 апр  5 21:56 .zshrc.bak
+
+nick@ub18x-GB:~$ ls -al | cut -d " " -f1 | grep -v total
+drwxr-xr-x
+drwxr-xr-x
+-rw-------
+-rw-r--r--
+-rw-r--r--
+drwx------
+drwx------
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-------
+drwx------
+-rw-------
+drwx------
+drwx------
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwx------
+-rw-r--r--
+drwxr-xr-x
+-rw-r-----
+-rw-r-----
+-rw-r-----
+-rw-r-----
+drwxr-xr-x
+-rw-------
+-rw-r--r--
+-rw-------
+-rw-r--r--
+
+nick@ub18x-GB:~$ ls -al | cut -d " " -f1 | grep -v total | uniq | sort
+drwx------
+drwx------
+drwx------
+drwx------
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-------
+-rw-------
+-rw-------
+-rw-------
+-rw-------
+-rw-r-----
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+
+nick@ub18x-GB:~$ ls -al | cut -d " " -f1 | grep -v total | uniq | sort > access.txt
+
+nick@ub18x-GB:~$ cat access.txt | grep d*x-
+drwx------
+drwx------
+drwx------
+drwx------
+nick@ub18x-GB:~$ cat access.txt | grep d*x- | wc -l
+4
+nick@ub18x-GB:~$ cat access.txt | grep xr-
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+nick@ub18x-GB:~$ cat access.txt | grep xr- | wc -l
+6
+
+nick@ub18x-GB:~$ cat access.txt | grep rw--
+-rw-------
+-rw-------
+-rw-------
+-rw-------
+-rw-------
+nick@ub18x-GB:~$ cat access.txt | grep rw-- | wc -l
+5
+nick@ub18x-GB:~$ cat access.txt | grep rw-r--- | wc -l
+1
+nick@ub18x-GB:~$ cat access.txt | grep rw-r--r | wc -l
+7
+nick@ub18x-GB:~$ cat access.txt | uniq -c
+      4 drwx------
+      6 drwxr-xr-x
+      5 -rw-------
+      1 -rw-r-----
+      7 -rw-r--r--
+
+
+
+nick@ub18x-GB:~$ ls -al
+total 180
+drwxr-xr-x 17 nick nick  4096 апр  6 23:13 .
+drwxr-xr-x  3 root root  4096 апр  1 00:21 ..
+-rw-r--r--  1 nick nick   253 апр  6 23:13 access.txt
+-rw-------  1 nick nick   311 апр  6 21:45 .bash_history
+-rw-r--r--  1 nick nick   220 апр  1 00:21 .bash_logout
+-rw-r--r--  1 nick nick  3771 апр  1 00:21 .bashrc
+drwx------ 13 nick nick  4096 апр  1 01:05 .cache
+drwx------ 14 nick nick  4096 апр  6 17:51 .config
+drwxr-xr-x  3 nick nick  4096 апр  3 21:50 Desktop
+drwxr-xr-x  2 nick nick  4096 апр  1 01:22 Documents
+drwxr-xr-x  2 nick nick  4096 апр  1 00:37 Downloads
+-rw-r--r--  1 nick nick   117 апр  6 20:48 .gitconfig
+-rw-------  1 nick nick    41 апр  6 21:46 .git-credentials
+drwx------  3 nick nick  4096 апр  6 00:19 .gnupg
+-rw-------  1 nick nick  3260 апр  6 18:09 .ICEauthority
+drwx------  3 nick nick  4096 апр  1 00:37 .local
+drwx------  5 nick nick  4096 апр  1 00:59 .mozilla
+drwxr-xr-x  2 nick nick  4096 апр  1 00:37 Music
+drwxr-xr-x  2 nick nick  4096 апр  1 00:37 Pictures
+-rw-r--r--  1 nick nick   807 апр  1 00:21 .profile
+drwxr-xr-x  2 nick nick  4096 апр  1 00:37 Public
+drwxr-xr-x  3 nick nick  4096 апр  6 17:53 snap
+drwx------  2 nick nick  4096 апр  6 00:54 .ssh
+-rw-r--r--  1 nick nick     0 апр  1 00:38 .sudo_as_admin_successful
+drwxr-xr-x  2 nick nick  4096 апр  1 00:37 Templates
+-rw-r-----  1 nick nick     5 апр  6 18:09 .vboxclient-clipboard.pid
+-rw-r-----  1 nick nick     5 апр  6 18:09 .vboxclient-display.pid
+-rw-r-----  1 nick nick     5 апр  6 18:09 .vboxclient-draganddrop.pid
+-rw-r-----  1 nick nick     5 апр  6 18:09 .vboxclient-seamless.pid
+drwxr-xr-x  2 nick nick  4096 апр  1 00:37 Videos
+-rw-------  1 nick nick  9160 апр  6 21:44 .viminfo
+-rw-r--r--  1 nick nick 42542 апр  3 21:00 .zcompdump
+-rw-------  1 nick nick   562 апр  5 21:57 .zsh_history
+-rw-r--r--  1 nick nick  1449 апр  5 21:56 .zshrc.bak
+
+#Самостоятельно решить задачу, как сделать так, чтобы в подсчет не добавлялись #строка «Итого» и файлы . и .. (ссылки на текущую и родительскую директории).
+
+
+nick@ub18x-GB:~$ ls -al | cut -d " " -f1 | grep -Ev "d|total" | uniq -c
+      1 -rw-r--r--
+      1 -rw-------
+      3 -rw-r--r--
+      2 -rw-------
+      2 -rw-r--r--
+      4 -rw-r-----
+      1 -rw-------
+      1 -rw-r--r--
+      1 -rw-------
+      1 -rw-r--r--
+
+
+
+
+
+
+
