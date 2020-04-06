@@ -1,0 +1,22 @@
+cat > file1.txt
+cat file1.txt
+
+cat > file2.txt
+cat file2.txt
+
+cat file1.txt file2.txt > file3.txt
+
+cat file3.txt
+--output file3.txt--
+cat file1.txt
+cat file2.txt
+
+mv file3.txt file3_new.txt file1.txt
+
+ls -l
+total 16
+-rw-r--r-- 1 nick nick 14 апр  6 20:38 file1.txt
+-rw-r--r-- 1 nick nick 14 апр  6 20:39 file2.txt
+-rw-r--r-- 1 nick nick 28 апр  6 20:40 file3_new.txt
+-rw-r--r-- 1 nick nick 36 апр  6 01:00 Readme.txt
+
