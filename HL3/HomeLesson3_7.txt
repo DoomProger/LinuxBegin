@@ -1,0 +1,30 @@
+* Создать директорию, в которой есть несколько файлов. Сделать так, чтобы открыть файлы можно было, только зная имя файла, а через ls список файлов посмотреть было нельзя.
+
+nick@ub18x-GB:~/Desktop/HL$ mkdir DirectoryNoList 
+nick@ub18x-GB:~/Desktop/HL$ echo "privet ya file 1" > DirectoryNoList/file1.txt
+nick@ub18x-GB:~/Desktop/HL$ echo "privet ya file 2" > DirectoryNoList/file2.txt
+nick@ub18x-GB:~/Desktop/HL$ echo "privet ya file 3" > DirectoryNoList/file3.txt
+nick@ub18x-GB:~/Desktop/HL$ 
+nick@ub18x-GB:~/Desktop/HL$ 
+nick@ub18x-GB:~/Desktop/HL$ ls -l DirectoryNoList/
+total 12
+-rw-rw-r-- 1 nick nick 17 апр 10 01:45 file1.txt
+-rw-rw-r-- 1 nick nick 17 апр 10 01:45 file2.txt
+-rw-rw-r-- 1 nick nick 17 апр 10 01:45 file3.txt
+nick@ub18x-GB:~/Desktop/HL$ 
+nick@ub18x-GB:~/Desktop/HL$ sudo chmod 111 DirectoryNoList
+nick@ub18x-GB:~/Desktop/HL$ ls -l
+total 28
+d--x--x--x 2 nick nick      4096 апр 10 01:45 DirectoryNoList
+-rw-r--r-- 1 nick nick       505 апр  9 21:27 filenew2
+-rw-r--r-- 1 nick nick       505 апр  9 21:27 filenew4
+-rw-rw-r-- 1 nick nick       121 апр  9 23:16 firstnewfile
+-rw-r--r-- 1 nick nick        36 апр  6 01:00 Readme.txt
+-rw------- 1 nick nick        70 апр  9 23:21 secondnewfile
+drwxrws--- 3 nick developer 4096 апр 10 01:01 SharedFoldevDev
+nick@ub18x-GB:~/Desktop/HL$ ls -l DirectoryNoList/
+ls: cannot open directory 'DirectoryNoList/': Permission denied
+nick@ub18x-GB:~/Desktop/HL$ cat DirectoryNoList/file1.txt
+privet ya file 1
+nick@ub18x-GB:~/Desktop/HL$ 
+
