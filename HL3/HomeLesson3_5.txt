@@ -1,0 +1,83 @@
+* Создать группу developer и несколько пользователей, входящих в нее. Создать директорию для совместной работы. Сделать так, чтобы созданные одними пользователями файлы могли изменять другие пользователи этой группы.
+
+nick@ub18x-GB:~/Desktop/HL$ sudo groupadd developer
+nick@ub18x-GB:~/Desktop/HL$ sudo useradd -m -G developer -s /bin/bash proger1
+nick@ub18x-GB:~/Desktop/HL$ sudo useradd -m -G developer -s /bin/bash proger2
+nick@ub18x-GB:~/Desktop/HL$ sudo useradd -m -G developer -s /bin/bash proger3
+nick@ub18x-GB:~/Desktop/HL$ sudo passwd proger1
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+nick@ub18x-GB:~/Desktop/HL$ sudo passwd proger2
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+nick@ub18x-GB:~/Desktop/HL$ sudo passwd proger3
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+nick@ub18x-GB:~/Desktop/HL$ 
+nick@ub18x-GB:~/Desktop/HL$ mkdir SharedFoldevDev
+nick@ub18x-GB:~/Desktop/HL$ ls -l
+total 24
+-rw-r--r-- 1 nick nick  505 апр  9 21:27 filenew2
+-rw-r--r-- 1 nick nick  505 апр  9 21:27 filenew4
+-rw-rw-r-- 1 nick nick  121 апр  9 23:16 firstnewfile
+-rw-r--r-- 1 nick nick   36 апр  6 01:00 Readme.txt
+-rw------- 1 nick nick   70 апр  9 23:21 secondnewfile
+drwxrwxr-x 2 nick nick 4096 апр 10 00:01 SharedFoldevDev
+nick@ub18x-GB:~/Desktop/HL$ chmod g+s SharedFoldevDev/
+nick@ub18x-GB:~/Desktop/HL$ ls -l
+total 24
+-rw-r--r-- 1 nick nick  505 апр  9 21:27 filenew2
+-rw-r--r-- 1 nick nick  505 апр  9 21:27 filenew4
+-rw-rw-r-- 1 nick nick  121 апр  9 23:16 firstnewfile
+-rw-r--r-- 1 nick nick   36 апр  6 01:00 Readme.txt
+-rw------- 1 nick nick   70 апр  9 23:21 secondnewfile
+drwxrwsr-x 2 nick nick 4096 апр 10 00:01 SharedFoldevDev
+nick@ub18x-GB:~/Desktop/HL$ chmod o-rwx SharedFoldevDev/
+nick@ub18x-GB:~/Desktop/HL$ ls -l
+total 24
+-rw-r--r-- 1 nick nick  505 апр  9 21:27 filenew2
+-rw-r--r-- 1 nick nick  505 апр  9 21:27 filenew4
+-rw-rw-r-- 1 nick nick  121 апр  9 23:16 firstnewfile
+-rw-r--r-- 1 nick nick   36 апр  6 01:00 Readme.txt
+-rw------- 1 nick nick   70 апр  9 23:21 secondnewfile
+drwxrws--- 2 nick nick 4096 апр 10 00:01 SharedFoldevDev
+
+nick@ub18x-GB:~/Desktop/HL$ sudo chgrp -R developer ~/Desktop/HL/SharedFoldevDev/
+nick@ub18x-GB:~/Desktop/HL$ ls -l SharedFoldevDev/
+total 0
+nick@ub18x-GB:~/Desktop/HL$ ls -l
+total 24
+-rw-r--r-- 1 nick nick       505 апр  9 21:27 filenew2
+-rw-r--r-- 1 nick nick       505 апр  9 21:27 filenew4
+-rw-rw-r-- 1 nick nick       121 апр  9 23:16 firstnewfile
+-rw-r--r-- 1 nick nick        36 апр  6 01:00 Readme.txt
+-rw------- 1 nick nick        70 апр  9 23:21 secondnewfile
+drwxrws--- 2 nick developer 4096 апр 10 00:01 SharedFoldevDev
+nick@ub18x-GB:~/Desktop/HL$ su proger1
+Password: 
+proger1@ub18x-GB:/home/nick/Desktop/HL$ cd SharedFoldevDev/
+proger1@ub18x-GB:/home/nick/Desktop/HL/SharedFoldevDev$ cat>test1
+Privet - proger1
+proger1@ub18x-GB:/home/nick/Desktop/HL/SharedFoldevDev$ su proger2
+Password: 
+proger2@ub18x-GB:/home/nick/Desktop/HL/SharedFoldevDev$ vim test1 
+proger2@ub18x-GB:/home/nick/Desktop/HL/SharedFoldevDev$ 
+proger2@ub18x-GB:/home/nick/Desktop/HL/SharedFoldevDev$ 
+proger2@ub18x-GB:/home/nick/Desktop/HL/SharedFoldevDev$ su nick
+Password: 
+nick@ub18x-GB:~/Desktop/HL/SharedFoldevDev$ ls
+test1
+nick@ub18x-GB:~/Desktop/HL/SharedFoldevDev$ ls -l
+total 4
+-rw-rw-r-- 1 proger1 developer 33 апр 10 00:12 test1
+nick@ub18x-GB:~/Desktop/HL/SharedFoldevDev$ ^C
+nick@ub18x-GB:~/Desktop/HL/SharedFoldevDev$ 
+nick@ub18x-GB:~/Desktop/HL/SharedFoldevDev$ cat test1
+Privet - proger1
+
+proger2 - edit
+
+
