@@ -1,0 +1,56 @@
+nick@ub18x-GB:~/Desktop/HL$ touch firstnewfile
+nick@ub18x-GB:~/Desktop/HL$ touch secondnewfile
+
+nick@ub18x-GB:~/Desktop/HL$ ls -l
+total 12
+-rw-r--r-- 1 nick nick 505 апр  9 21:27 filenew2
+-rw-r--r-- 1 nick nick 505 апр  9 21:27 filenew4
+-rw-r--r-- 1 nick nick   0 апр  9 23:15 firstnewfile
+-rw-r--r-- 1 nick nick  36 апр  6 01:00 Readme.txt
+-rw-r--r-- 1 nick nick   0 апр  9 23:15 secondnewfile
+
+nick@ub18x-GB:~/Desktop/HL$ cat firstnewfile 
+чтение, запись для владельца и группы, только на чтение — для всех
+nick@ub18x-GB:~/Desktop/HL$ chmod ug+rw firstnewfile 
+nick@ub18x-GB:~/Desktop/HL$ chmod o+r firstnewfile 
+nick@ub18x-GB:~/Desktop/HL$ ls -l
+total 16
+-rw-r--r-- 1 nick nick 505 апр  9 21:27 filenew2
+-rw-r--r-- 1 nick nick 505 апр  9 21:27 filenew4
+-rw-rw-r-- 1 nick nick 121 апр  9 23:16 firstnewfile
+-rw-r--r-- 1 nick nick  36 апр  6 01:00 Readme.txt
+-rw-r--r-- 1 nick nick   0 апр  9 23:15 secondnewfile
+
+nick@ub18x-GB:~/Desktop/HL$ cat secondnewfile 
+чтение, запись — только для владельца
+nick@ub18x-GB:~/Desktop/HL$ chmod u+rw secondnewfile
+nick@ub18x-GB:~/Desktop/HL$ chmod g=-r,o=-r secondnewfile  
+nick@ub18x-GB:~/Desktop/HL$ ls -lh
+total 20K
+-rw-r--r-- 1 nick nick 505 апр  9 21:27 filenew2
+-rw-r--r-- 1 nick nick 505 апр  9 21:27 filenew4
+-rw-rw-r-- 1 nick nick 121 апр  9 23:16 firstnewfile
+-rw-r--r-- 1 nick nick  36 апр  6 01:00 Readme.txt
+-rw------- 1 nick nick  70 апр  9 23:21 secondnewfile
+nick@ub18x-GB:~/Desktop/HL$
+
+nick@ub18x-GB:~/Desktop/HL$ chmod 664 firstnewfile 
+nick@ub18x-GB:~/Desktop/HL$ ls -lh
+total 20K
+-rw-r--r-- 1 nick nick 505 апр  9 21:27 filenew2
+-rw-r--r-- 1 nick nick 505 апр  9 21:27 filenew4
+-rw-rw-r-- 1 nick nick 121 апр  9 23:16 firstnewfile
+-rw-r--r-- 1 nick nick  36 апр  6 01:00 Readme.txt
+-rw-r--r-- 1 nick nick  70 апр  9 23:21 secondnewfile
+
+nick@ub18x-GB:~/Desktop/HL$ chmod 600 secondnewfile 
+nick@ub18x-GB:~/Desktop/HL$ ls -lh
+total 20K
+-rw-r--r-- 1 nick nick 505 апр  9 21:27 filenew2
+-rw-r--r-- 1 nick nick 505 апр  9 21:27 filenew4
+-rw-rw-r-- 1 nick nick 121 апр  9 23:16 firstnewfile
+-rw-r--r-- 1 nick nick  36 апр  6 01:00 Readme.txt
+-rw------- 1 nick nick  70 апр  9 23:21 secondnewfile
+nick@ub18x-GB:~/Desktop/HL$ 
+
+
