@@ -1,0 +1,29 @@
+nick@ub18x-GB:~/Desktop/HL$ rm file3
+nick@ub18x-GB:~/Desktop/HL$ ls
+file2  file4  Readme.txt
+nick@ub18x-GB:~/Desktop/HL$ mv file2 filenew2
+nick@ub18x-GB:~/Desktop/HL$ mv file4 filenew4
+nick@ub18x-GB:~/Desktop/HL$ ls -lih
+total 12K
+265340 -rw-r--r-- 1 nick nick 505 апр  9 21:27 filenew2
+272951 -rw-r--r-- 1 nick nick 505 апр  9 21:27 filenew4
+280405 -rw-r--r-- 1 nick nick  36 апр  6 01:00 Readme.txt
+nick@ub18x-GB:~/Desktop/HL$ ln -s filenew2 linkfile2
+nick@ub18x-GB:~/Desktop/HL$ ls -lih
+total 12K
+265340 -rw-r--r-- 1 nick nick 505 апр  9 21:27 filenew2
+272951 -rw-r--r-- 1 nick nick 505 апр  9 21:27 filenew4
+273893 lrwxrwxrwx 1 nick nick   8 апр  9 23:09 linkfile2 -> filenew2
+280405 -rw-r--r-- 1 nick nick  36 апр  6 01:00 Readme.txt
+nick@ub18x-GB:~/Desktop/HL$ mv linkfile2 ~/Desktop/
+nick@ub18x-GB:~/Desktop/HL$ ls
+filenew2  filenew4  Readme.txt
+nick@ub18x-GB:~/Desktop/HL$ ls ~/Desktop/
+HL  linkfile2
+nick@ub18x-GB:~/Desktop/HL$ ls -lih ~/Desktop/
+total 4,0K
+269511 drwxrwxr-x 2 nick nick 4,0K апр  9 23:10 HL
+273893 lrwxrwxrwx 1 nick nick    8 апр  9 23:09 linkfile2 -> filenew2
+nick@ub18x-GB:~/Desktop/HL$ cat ~/Desktop/linkfile2 
+cat: /home/nick/Desktop/linkfile2: No such file or directory
+nick@ub18x-GB:~/Desktop/HL$ 

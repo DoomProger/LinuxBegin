@@ -1,0 +1,20 @@
+* Создать в директории для совместной работы поддиректорию для обмена файлами, но чтобы удалять файлы могли только их создатели.
+nick@ub18x-GB:~/Desktop/HL/SharedFoldevDev$ mkdir SharedOwnFiles/
+nick@ub18x-GB:~/Desktop/HL/SharedFoldevDev$ sudo chmod 1750 SharedOwnFiles/
+nick@ub18x-GB:~/Desktop/HL/SharedFoldevDev$ ls -l
+total 12
+-rw-rw-r-- 1 proger2 developer   11 апр 10 01:01 123file
+drwxr-x--T 2 proger1 developer 4096 апр 10 01:38 SharedOwnFiles
+-rw-rw-r-- 1 proger1 developer   33 апр 10 00:12 test1
+
+proger1@ub18x-GB:/home/nick/Desktop/HL/SharedFoldevDev/SharedOwnFiles$ cat>123
+asdasd
+proger1@ub18x-GB:/home/nick/Desktop/HL/SharedFoldevDev/SharedOwnFiles$ ls -l
+total 4
+-rw-rw-r-- 1 proger1 proger1 7 апр 10 01:39 123
+proger1@ub18x-GB:/home/nick/Desktop/HL/SharedFoldevDev/SharedOwnFiles$ su proger2
+Password: 
+proger2@ub18x-GB:/home/nick/Desktop/HL/SharedFoldevDev/SharedOwnFiles$ rm 123 
+rm: remove write-protected regular file '123'? y
+rm: cannot remove '123': Permission denied
+

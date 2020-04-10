@@ -1,0 +1,31 @@
+Создать пользователя, обладающего возможностью выполнять действия от имени суперпользователя.
+
+nick@ub18x-GB:~/Desktop/HL$ sudo adduser usrwithsudo
+[sudo] password for nick: 
+Adding user `usrwithsudo' ...
+Adding new group `usrwithsudo' (1001) ...
+Adding new user `usrwithsudo' (1001) with group `usrwithsudo' ...
+Creating home directory `/home/usrwithsudo' ...
+Copying files from `/etc/skel' ...
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+Changing the user information for usrwithsudo
+Enter the new value, or press ENTER for the default
+	Full Name []: Ivan
+	Room Number []: 404
+	Work Phone []: 112
+	Home Phone []: 911
+	Other []: 
+Is the information correct? [Y/n] y
+nick@ub18x-GB:~/Desktop/HL$ 
+usrwithsudo@ub18x-GB:/home/nick/Desktop/HL$ sudo apt update
+[sudo] password for usrwithsudo: 
+usrwithsudo is not in the sudoers file.  This incident will be reported.
+
+-----Add user to sudo group
+nick@ub18x-GB:~/Desktop/HL$ sudo usermod -aG sudo usrwithsudo
+nick@ub18x-GB:~/Desktop/HL$ grep usrwithsudo /etc/group
+sudo:x:27:nick,usrwithsudo
+usrwithsudo:x:1001:
+ 
