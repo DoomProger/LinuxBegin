@@ -1,0 +1,18 @@
+nick@ub18x-GB:~/Desktop/HL$ vim file1
+nick@ub18x-GB:~/Desktop/HL$ cat file1
+Создать файл file1 и наполнить его произвольным содержимым. Скопировать его в file2. Создать символическую ссылку file3 на file1. Создать жесткую ссылку file4 на file1. Посмотреть, какие айноды у файлов. Удалить file1. Что стало с остальными созданными файлами? Попробовать вывести их на экран.
+
+nick@ub18x-GB:~/Desktop/HL$ cp file1 file2
+nick@ub18x-GB:~/Desktop/HL$ ls
+file1  file2  Readme.txt
+nick@ub18x-GB:~/Desktop/HL$ ln -s file1 file3
+nick@ub18x-GB:~/Desktop/HL$ ls -ali
+total 32
+269511 drwxrwxr-x 2 nick nick  4096 апр  9 21:31 .
+264697 drwxr-xr-x 3 nick nick  4096 апр  3 21:50 ..
+272951 -rw-r--r-- 1 nick nick   505 апр  9 21:27 file1
+265340 -rw-r--r-- 1 nick nick   505 апр  9 21:27 file2
+273893 lrwxrwxrwx 1 nick nick     5 апр  9 21:31 file3 -> file1
+280405 -rw-r--r-- 1 nick nick    36 апр  6 01:00 Readme.txt
+280408 -rw-r--r-- 1 nick nick 12288 апр  6 21:44 .Readme.txt.swp
+
