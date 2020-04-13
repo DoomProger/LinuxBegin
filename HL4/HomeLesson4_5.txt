@@ -1,0 +1,33 @@
+nick@ub18x-GB:~/Desktop/HL/scripts$ ls
+nick  ownersort.sh  root
+nick@ub18x-GB:~/Desktop/HL/scripts$ ls -l
+total 12
+drwxr-xr-x 2 nick nick 4096 апр 14 02:13 nick
+-rw-r--r-- 1 nick nick  248 апр 14 02:13 ownersort.sh
+drwxr-xr-x 2 nick nick 4096 апр 14 02:13 root
+nick@ub18x-GB:~/Desktop/HL/scripts$ tree
+.
+├── nick
+│   ├── cp_textfile.txt
+│   ├── delemptandtitle.sh
+│   ├── dirhierarch.sh
+│   ├── ownersort.sh
+│   └── textfile.txt
+├── ownersort.sh
+└── root
+    ├── text1.txt
+    └── text.txt
+
+2 directories, 8 files
+nick@ub18x-GB:~/Desktop/HL/scripts$ ls -l nick
+total 20
+-rw-r--r-- 1 nick nick 189 апр 13 21:44 cp_textfile.txt
+-rwxrwx--- 1 nick nick 298 апр 13 22:27 delemptandtitle.sh
+-rwxr-xr-- 1 nick nick 321 апр 14 00:19 dirhierarch.sh
+-rwxr-xr-- 1 nick nick 248 апр 14 02:13 ownersort.sh
+-rw-r--r-- 1 nick nick 185 апр 13 22:27 textfile.txt
+nick@ub18x-GB:~/Desktop/HL/scripts$ ls -l root
+total 0
+-rw-r--r-- 1 root root 0 апр 14 01:17 text1.txt
+-rw-r--r-- 1 root root 0 апр 14 01:17 text.txt
+nick@ub18x-GB:~/Desktop/HL/scripts$ 
