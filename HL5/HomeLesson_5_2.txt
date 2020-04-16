@@ -1,0 +1,46 @@
+Переключить настройку сети на автоматическую через DHCP, проверить получение адреса.
+
+
+руками задал IP 1.1.1.1
+nick@ub18x-GB:/gitrepos/linux/HL5$ ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:40:97:86 brd ff:ff:ff:ff:ff:ff
+    inet 1.1.1.1/24 brd 1.1.1.255 scope global noprefixroute enp0s3
+       valid_lft forever preferred_lft forever
+    inet6 fe80::3855:aedb:d337:dcc/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+
+nick@ub18x-GB:/gitrepos/linux/HL5$ nmcli connection modify "Wired connection 1" ifname enp0s3 autoconnect yes ipv4.method auto
+nick@ub18x-GB:/gitrepos/linux/HL5$ nmcli connection up Wired\ connection\ 1
+sudo systemctl restart NetworkManager.service
+
+И после этого у меня не прописался автоматом defaul route, т.е. он остался 1.1.1.1, даже после перезагрузки.
+В итоге я через GUI переприменил настройки и после ребута - заработало.
+nmcli - еще сырой, либо я не нуачился его готовить.
+
+
+nick@ub18x-GB:~$ ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:40:97:86 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.12/24 brd 192.168.1.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 604740sec preferred_lft 604740sec
+    inet6 fe80::3855:aedb:d337:dcc/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+
+
+
+
+
+
