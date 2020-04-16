@@ -1,1 +1,76 @@
 Произвести ручную настройку сети в Ubuntu, на каждом шаге сделать скриншоты. (Но можно и файлом команды отдать.)
+
+ip addr > /gitrepos/linux/HL5/HomeLesson_5_1.txt
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:40:97:86 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 84091sec preferred_lft 84091sec
+    inet6 fe80::3855:aedb:d337:dcc/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+
+root@ub18x-GB:~# dhclient -r enp0s3
+root@ub18x-GB:~# ip -4 addr flush dev enp0s3
+root@ub18x-GB:~# ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:40:97:86 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::3855:aedb:d337:dcc/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+
+root@ub18x-GB:~# ip addr add 10.0.2.20/24 broadcast 10.0.2.255 dev enp0s3 
+root@ub18x-GB:~# ip route add default via 10.0.2.2
+root@ub18x-GB:~# ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:40:97:86 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.20/24 brd 10.0.2.255 scope global enp0s3
+       valid_lft forever preferred_lft forever
+    inet6 fe80::3855:aedb:d337:dcc/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+
+root@ub18x-GB:~# ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=44 time=10.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=44 time=7.03 ms
+
+root@ub18x-GB:~# vim /etc/resolv.conf 
+# nameserver 127.0.0.5
+nameserver 8.8.8.8
+options edns0
+
+root@ub18x-GB:~# nslookup ya.ru
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+Name:	ya.ru
+Address: 87.250.250.242
+Name:	ya.ru
+Address: 2a02:6b8::2:242
+
+В графическом интерфейса, меняется адрес через свойства адаптера.
+Шестеренка, ipv4-manual-addresses, далее вводим ip 10.0.2.100, msk 255.255.255.0 gw 10.0.2.2
+Ниже прописываем dns, предварительно Automatic - off.
+
+Применяем настройки Apply.
+Профит.
+
+
+
+
