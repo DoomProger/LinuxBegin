@@ -1,0 +1,33 @@
+* Настроить правила iptables, чтобы из внешней сети можно было обратиться только к портам 80 и 443.
+
+root@ub18x-GB:~# iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+root@ub18x-GB:~# iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+root@ub18x-GB:~# iptables -A INPUT -j DROP
+root@ub18x-GB:~# iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:http
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:https
+DROP       all  --  anywhere             anywhere            
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+root@ub18x-GB:~# 
+
+
+inet 192.168.1.12/24 brd 192.168.1.255 scope global dynamic noprefixroute enp0s3
+Пинг с домашнего ПК - виртуалку
+ping 192.168.1.12
+
+Обмен пакетами с 192.168.1.12 по с 32 байтами данных:
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+
+Статистика Ping для 192.168.1.12:
+    Пакетов: отправлено = 4, получено = 0, потеряно = 4
+    (100% потерь)

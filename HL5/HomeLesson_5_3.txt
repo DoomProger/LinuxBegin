@@ -1,0 +1,36 @@
+Изменить адрес DNS на 1.1.1.1 и проверить доступность интернета, например, открыв любой браузер на адрес https://geekbrains.ru.
+
+nick@ub18x-GB:~$ nmcli connection modify Wired\ connection\ 1 ipv4.dns 1.1.1.1 ipv4.ignore-auto-dns yes
+nick@ub18x-GB:~$ nmcli connection show Wired\ connection\ 1 | grep ipv4
+ipv4.method:                            auto
+ipv4.dns:                               1.1.1.1
+ipv4.dns-search:                        false
+ipv4.dns-options:                       ""
+ipv4.dns-priority:                      0
+ipv4.addresses:                         --
+ipv4.gateway:                           --
+ipv4.routes:                            --
+ipv4.route-metric:                      -1
+ipv4.route-table:                       0 (unspec)
+ipv4.ignore-auto-routes:                no
+ipv4.ignore-auto-dns:                   yes
+ipv4.dhcp-client-id:                    --
+ipv4.dhcp-timeout:                      0 (default)
+ipv4.dhcp-send-hostname:                yes
+ipv4.dhcp-hostname:                     --
+ipv4.dhcp-fqdn:                         --
+ipv4.never-default:                     no
+ipv4.may-fail:                          yes
+ipv4.dad-timeout:                       -1 (default)
+
+https://geekbrains.ru/ - открылся
+Разрешается тоже нормально
+nick@ub18x-GB:~$ nslookup geekbrains.ru 1.1.1.1
+Server:		1.1.1.1
+Address:	1.1.1.1#53
+
+Non-authoritative answer:
+Name:	geekbrains.ru
+Address: 178.248.232.209
+
+
