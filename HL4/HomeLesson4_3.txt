@@ -1,0 +1,12 @@
+nick@ub18x-GB:~/Desktop/HL/scripts$ ls -l
+total 48
+drwxr-xr-x 14 nick nick 4096 апр 14 00:19 2010
+drwxr-xr-x 14 nick nick 4096 апр 14 00:19 2011
+drwxr-xr-x 14 nick nick 4096 апр 14 00:19 2012
+drwxr-xr-x 14 nick nick 4096 апр 14 00:19 2013
+drwxr-xr-x 14 nick nick 4096 апр 14 00:19 2014
+drwxr-xr-x 14 nick nick 4096 апр 14 00:19 2015
+drwxr-xr-x 14 nick nick 4096 апр 14 00:19 2016
+drwxr-xr-x 14 nick nick 4096 апр 14 00:19 2017
+-rwxr-xr--  1 nick nick  321 апр 14 00:19 dirhierarch.sh
+-rw-r--r--  1 nick nick  185 апр 13 22:27 textfile.txt

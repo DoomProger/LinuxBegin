@@ -1,0 +1,10 @@
+Primary datacenter IP namespace
+
+Secondary datacenter IP namespace
+
+Primary Outlook Web App failback namespace
+
+Secondary Outlook Web App failback namespace
+
+Transport namespace (for SMTP)
+

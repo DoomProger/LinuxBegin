@@ -1,0 +1,39 @@
+nick@ub18x-GB:~/Desktop/HL/scripts$ ./delemptandtitle.sh textfile.txt
++ '[' -n textfile.txt ']'
++ echo file is textfile.txt
+file is textfile.txt
++ echo 'before change'
+before change
++ cat textfile.txt
+Primary datacenter IP namespace
+
+Secondary datacenter IP namespace
+
+Primary Outlook Web App failback namespace
+
+Secondary Outlook Web App failback namespace
+
+Transport namespace (for SMTP)
+
++ echo -----------------------
+-----------------------
++ sed -i '/^\s*$/d' textfile.txt
++ echo '==== delete empty lines ===>'
+==== delete empty lines ===>
++ cat textfile.txt
+Primary datacenter IP namespace
+Secondary datacenter IP namespace
+Primary Outlook Web App failback namespace
+Secondary Outlook Web App failback namespace
+Transport namespace (for SMTP)
++ cat textfile.txt
++ tr '[:lower:]' '[:upper:]'
++ echo ------------------------
+------------------------
++ cat textfile.txt_out
+PRIMARY DATACENTER IP NAMESPACE
+SECONDARY DATACENTER IP NAMESPACE
+PRIMARY OUTLOOK WEB APP FAILBACK NAMESPACE
+SECONDARY OUTLOOK WEB APP FAILBACK NAMESPACE
+TRANSPORT NAMESPACE (FOR SMTP)
+
